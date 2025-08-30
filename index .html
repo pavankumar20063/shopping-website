@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerse Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>My Shop</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#cart">Cart (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Welcome to My Shop</h2>
+        <p>Find the best products for the best prices!</p>
+    </section>
+
+    <section id="products">
+        <h2>Products</h2>
+        <div class="product" data-id="1">
+            <img src="chair.jpg" alt="imags.jpg">
+            <h3>Chair</h3>
+            <p>₹2300.00</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="2">
+            <img src="sofa1.jpg" alt="LED TV">
+            <h3>Sofa</h3>
+            <p>₹4500.00</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+         <div class="product" data-id="3">
+            <img src="ball.jpg" alt="imags.jpg">
+            <h3>Ball</h3>
+            <p>₹40.00</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <!-- Add more products as needed -->
+    </section>
+
+    <section id="cart">
+        <h2>Your Cart</h2>
+        <ul id="cart-items"></ul>
+        <p>Total: ₹<span id="total-price">0.00</span></p>
+        <button id="checkout">Checkout</button>
+    </section>
+
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.CSS">
+</body>
+</html>
